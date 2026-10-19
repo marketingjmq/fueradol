@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FUERADOL · Gel de árnica y ají</title>
+<meta name="description" content="FUERADOL, gel tópico con extractos naturales de árnica y ají para el alivio de dolores musculares y articulares. Ficha técnica e instrucciones de uso.">
+<meta name="theme-color" content="#d7262d">
+<meta property="og:title" content="FUERADOL · Gel de árnica y ají">
+<meta property="og:description" content="Alivio para dolores musculares y articulares. Conoce cómo usarlo correctamente.">
+<meta property="og:image" content="media/frasco-piedra.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --rojo: #d7262d;
+    --rojo-osc: #a8161c;
+    --arnica: #f2b51d;
+    --arnica-suave: #fdf3d6;
+    --aji-suave: #fde4e2;
+    --verde: #2f7d4f;
+    --verde-suave: #e3f2e8;
+    --crema: #faf6f0;
+    --arena: #efe6d9;
+    --tinta: #23201c;
+    --tinta-2: #5b544b;
+    --borde: #e3d9cb;
+    --blanco: #ffffff;
+    --alerta: #9a4b00;
+    --alerta-suave: #fff1df;
+    --radio: 18px;
+    --sombra: 0 6px 24px rgba(60, 40, 20, .08);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Nunito Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--tinta);
+    background: var(--crema);
+  }
+  img, video { max-width: 100%; display: block; }
+  a { color: var(--rojo-osc); }
+  h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; }
+  h2 { font-size: 1.75rem; font-weight: 900; }
+  h3 { font-size: 1.25rem; font-weight: 800; }
+  p { margin: 0 0 1em; }
+  .contenedor { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  section { padding: 48px 0; scroll-margin-top: 64px; }
+  .etiqueta {
+    display: inline-block; font-size: .8rem; font-weight: 800; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--rojo); margin-bottom: 8px;
+  }
+  .marca { font-weight: 900; color: var(--rojo); letter-spacing: .01em; }
+
+  /* Navegación */
+  nav.menu {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255, 255, 255, .96); backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--borde);
+  }
+  nav.menu .contenedor { display: flex; align-items: center; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+  nav.menu .contenedor::-webkit-scrollbar { display: none; }
+  nav.menu a {
+    flex: 0 0 auto; padding: 14px 12px; font-size: .95rem; font-weight: 800;
+    text-decoration: none; color: var(--tinta-2); white-space: nowrap;
+  }
+  nav.menu a.logo { color: var(--rojo); font-weight: 900; font-size: 1.1rem; padding-left: 0; }
+  nav.menu a.destacado { color: var(--rojo); }
+
+  /* Portada */
+  .portada { background: linear-gradient(180deg, var(--arena) 0%, var(--crema) 100%); padding: 32px 0 40px; }
+  .portada .contenedor { display: grid; gap: 24px; align-items: center; }
+  .portada h1 { font-size: 3rem; font-weight: 900; color: var(--rojo); margin: 0; letter-spacing: -.01em; }
+  .portada .lema { font-size: 1.35rem; font-weight: 700; margin: 8px 0 16px; }
+  .portada .foto { border-radius: var(--radio); overflow: hidden; box-shadow: var(--sombra); max-height: 520px; }
+  .portada .foto img { width: 100%; height: 100%; max-height: 520px; object-fit: cover; object-position: center 60%; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .chip {
+    padding: 6px 14px; border-radius: 999px; font-size: .9rem; font-weight: 800;
+    background: var(--blanco); border: 1px solid var(--borde);
+  }
+  .chip.arnica { background: var(--arnica-suave); border-color: #f1d98f; }
+  .chip.aji { background: var(--aji-suave); border-color: #f3b9b4; }
+  .boton {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 56px; padding: 0 24px; border-radius: 14px; font-size: 1.1rem; font-weight: 900;
+    text-decoration: none; background: var(--rojo); color: var(--blanco); border: 0;
+  }
+  .boton.secundario { background: var(--blanco); color: var(--rojo-osc); border: 2px solid var(--rojo); }
+  .botones { display: flex; flex-wrap: wrap; gap: 12px; }
+  @media (max-width: 699px) {
+    .portada .foto { order: -1; max-height: 340px; }
+    .portada .foto img { max-height: 340px; }
+    .portada h1 { font-size: 2.6rem; }
+  }
+  @media (min-width: 700px) {
+    .portada .contenedor { grid-template-columns: 1.1fr .9fr; }
+    .portada h1 { font-size: 3.6rem; }
+  }
+
+  /* Ingredientes */
+  .ingredientes { display: grid; gap: 16px; }
+  .ingrediente {
+    border-radius: var(--radio); padding: 24px; background: var(--blanco);
+    border: 1px solid var(--borde); box-shadow: var(--sombra);
+  }
+  .ingrediente.principal.arnica { background: var(--arnica-suave); border-color: #f1d98f; }
+  .ingrediente.principal.aji { background: var(--aji-suave); border-color: #f3b9b4; }
+  .ingrediente .icono { font-size: 2.6rem; line-height: 1; margin-bottom: 8px; }
+  .ingrediente .cientifico { font-style: italic; color: var(--tinta-2); font-size: .95rem; margin-top: -6px; }
+  .ingrediente ul { margin: 0; padding-left: 1.2em; }
+  .ingrediente li { margin-bottom: 6px; }
+  .complementos { display: grid; gap: 12px; margin-top: 20px; }
+  .complemento {
+    display: flex; gap: 14px; align-items: flex-start; padding: 16px 18px;
+    border-radius: 14px; background: var(--blanco); border: 1px solid var(--borde);
+  }
+  .complemento .icono { font-size: 1.6rem; line-height: 1.2; }
+  .complemento p { margin: 0; font-size: .95rem; color: var(--tinta-2); }
+  .complemento strong { color: var(--tinta); }
+  .respaldo {
+    margin-top: 20px; padding: 16px 18px; border-left: 5px solid var(--verde);
+    background: var(--verde-suave); border-radius: 0 14px 14px 0; font-size: .95rem;
+  }
+  @media (min-width: 700px) {
+    .ingredientes { grid-template-columns: 1fr 1fr; }
+    .complementos { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* Uso correcto */
+  #uso { background: var(--blanco); border-top: 6px solid var(--rojo); }
+  .resumen-uso { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 8px 0 28px; }
+  .dato-uso {
+    text-align: center; padding: 16px 8px; border-radius: 14px;
+    background: var(--crema); border: 1px solid var(--borde);
+  }
+  .dato-uso .valor { font-size: 1.35rem; font-weight: 900; color: var(--rojo); line-height: 1.2; }
+  .dato-uso .texto { font-size: .85rem; font-weight: 700; color: var(--tinta-2); line-height: 1.3; margin-top: 4px; }
+  .pasos { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; counter-reset: paso; }
+  .paso {
+    display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start;
+    padding: 18px; border-radius: var(--radio); background: var(--crema); border: 1px solid var(--borde);
+  }
+  .paso .numero {
+    width: 56px; height: 56px; border-radius: 50%; background: var(--rojo); color: var(--blanco);
+    display: grid; place-items: center; font-size: 1.6rem; font-weight: 900;
+  }
+  .paso h3 { margin: 4px 0 4px; }
+  .paso p { margin: 0; color: var(--tinta-2); }
+  .paso.importante { background: var(--alerta-suave); border-color: #f2c98f; }
+  .paso.importante .numero { background: var(--alerta); }
+  .donde { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0 0; }
+  .donde div {
+    padding: 12px; border-radius: 12px; background: var(--blanco); border: 1px solid var(--borde);
+    font-weight: 700; font-size: .95rem; text-align: center;
+  }
+  .sensacion {
+    margin-top: 28px; padding: 20px; border-radius: var(--radio);
+    background: linear-gradient(90deg, var(--aji-suave), #e2f1fb);
+  }
+  .sensacion p:last-child { margin-bottom: 0; }
+  .si-no { display: grid; gap: 16px; margin-top: 28px; }
+  .lista-si, .lista-no { border-radius: var(--radio); padding: 20px 20px 12px; }
+  .lista-si { background: var(--verde-suave); }
+  .lista-no { background: var(--aji-suave); }
+  .lista-si h3 { color: var(--verde); }
+  .lista-no h3 { color: var(--rojo-osc); }
+  .lista-si ul, .lista-no ul { list-style: none; margin: 0; padding: 0; }
+  .lista-si li, .lista-no li { position: relative; padding-left: 34px; margin-bottom: 12px; }
+  .lista-si li::before, .lista-no li::before {
+    position: absolute; left: 0; top: 0; font-weight: 900; font-size: 1.2rem;
+  }
+  .lista-si li::before { content: "✓"; color: var(--verde); }
+  .lista-no li::before { content: "✕"; color: var(--rojo); }
+  @media (min-width: 700px) { .si-no { grid-template-columns: 1fr 1fr; } }
+
+  /* Videos */
+  .videos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .video figure { margin: 0; }
+  .video video {
+    width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 14px;
+    background: var(--arena); box-shadow: var(--sombra);
+  }
+  .video figcaption { font-size: .9rem; font-weight: 700; color: var(--tinta-2); margin-top: 8px; text-align: center; }
+
+  /* Precauciones */
+  #precauciones { background: var(--alerta-suave); }
+  .aviso-grande {
+    display: flex; gap: 14px; align-items: flex-start; padding: 18px; border-radius: var(--radio);
+    background: var(--blanco); border: 2px solid var(--alerta); margin-bottom: 20px;
+  }
+  .aviso-grande .icono { font-size: 1.8rem; line-height: 1.2; }
+  .aviso-grande p { margin: 0; font-weight: 700; }
+  .precauciones { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .precauciones li {
+    padding: 14px 16px 14px 48px; position: relative; border-radius: 12px;
+    background: var(--blanco); border: 1px solid #f2c98f;
+  }
+  .precauciones li::before { content: "!"; position: absolute; left: 14px; top: 14px;
+    width: 24px; height: 24px; border-radius: 50%; background: var(--alerta); color: var(--blanco);
+    display: grid; place-items: center; font-weight: 900; font-size: .9rem; line-height: 1; }
+  .emergencia { margin-top: 20px; padding: 18px; border-radius: var(--radio); background: var(--tinta); color: var(--blanco); }
+  .emergencia h3 { color: var(--arnica); }
+  .emergencia ul { margin: 0; padding-left: 1.2em; }
+  .emergencia li { margin-bottom: 6px; }
+
+  /* Ficha técnica */
+  .ficha { width: 100%; border-collapse: collapse; background: var(--blanco); border-radius: var(--radio); overflow: hidden; box-shadow: var(--sombra); }
+  .ficha th, .ficha td { text-align: left; vertical-align: top; padding: 14px 16px; border-bottom: 1px solid var(--borde); font-size: .98rem; }
+  .ficha th { width: 38%; background: var(--arena); font-weight: 800; }
+  .ficha tr:last-child th, .ficha tr:last-child td { border-bottom: 0; }
+  .composicion { list-style: none; margin: 0; padding: 0; }
+  .composicion li { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; border-bottom: 1px dashed var(--borde); }
+  .composicion li:last-child { border-bottom: 0; }
+  .composicion .principal { font-weight: 800; }
+  .pendiente { color: var(--tinta-2); font-style: italic; }
+  @media (max-width: 520px) {
+    .ficha th, .ficha td { display: block; width: 100%; }
+    .ficha th { border-bottom: 0; padding-bottom: 4px; }
+    .ficha td { padding-top: 4px; }
+  }
+
+  /* Preguntas */
+  details {
+    background: var(--blanco); border: 1px solid var(--borde); border-radius: 14px;
+    padding: 0 18px; margin-bottom: 10px;
+  }
+  summary { cursor: pointer; padding: 16px 0; font-weight: 800; list-style: none; position: relative; padding-right: 32px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; position: absolute; right: 0; top: 12px; font-size: 1.5rem; color: var(--rojo); font-weight: 900; }
+  details[open] summary::after { content: "−"; }
+  details p { color: var(--tinta-2); }
+
+  /* Contacto y pie */
+  .contacto { text-align: center; }
+  .contacto .botones { justify-content: center; }
+  .whatsapp { background: #1f9d55; }
+  footer { background: var(--tinta); color: #d8d1c6; padding: 32px 0 40px; font-size: .9rem; }
+  footer .marca { color: #ff6b70; font-size: 1.3rem; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+
+<nav class="menu" aria-label="Secciones">
+  <div class="contenedor">
+    <a class="logo" href="#inicio">FUERADOL</a>
+    <a href="#ingredientes">Ingredientes</a>
+    <a class="destacado" href="#uso">Cómo usarlo</a>
+    <a href="#precauciones">Precauciones</a>
+    <a href="#ficha">Ficha técnica</a>
+    <a href="#preguntas">Preguntas</a>
+  </div>
+</nav>
+
+<!-- PORTADA -->
+<header class="portada" id="inicio">
+  <div class="contenedor">
+    <div>
+      <span class="etiqueta">Gel tópico</span>
+      <h1>FUERADOL</h1>
+      <p class="lema">Alivio para dolores musculares y de articulaciones, con extractos naturales de árnica y ají.</p>
+      <div class="chips">
+        <span class="chip arnica">🌼 Extracto de árnica</span>
+        <span class="chip aji">🌶️ Extracto de ají</span>
+        <span class="chip">30 g</span>
+      </div>
+      <div class="botones">
+        <a class="boton" href="#uso">Cómo usarlo bien</a>
+        <a class="boton secundario" href="#ficha">Ficha técnica</a>
+      </div>
+    </div>
+    <div class="foto">
+      <img src="media/frasco-piedra.jpg" alt="Frasco blanco de FUERADOL gel tópico de 30 gramos" width="526" height="1200">
+    </div>
+  </div>
+</header>
+
+<!-- INGREDIENTES -->
+<section id="ingredientes">
+  <div class="contenedor">
+    <span class="etiqueta">Lo que hay dentro</span>
+    <h2>La fuerza de dos plantas</h2>
+    <p>FUERADOL combina dos extractos vegetales usados desde hace generaciones para aliviar dolores del cuerpo.</p>
+
+    <div class="ingredientes">
+      <article class="ingrediente principal arnica">
+        <div class="icono" aria-hidden="true">🌼</div>
+        <h3>Extracto de árnica</h3>
+        <p class="cientifico">Arnica montana</p>
+        <p>Flor de montaña usada tradicionalmente en Europa y América para golpes, torceduras y dolores articulares.</p>
+        <ul>
+          <li>Contiene <strong>helenalina</strong> y otras lactonas sesquiterpénicas con acción antiinflamatoria.</li>
+          <li>Ayuda a calmar la inflamación y la rigidez de músculos y articulaciones.</li>
+        </ul>
+      </article>
+      <article class="ingrediente principal aji">
+        <div class="icono" aria-hidden="true">🌶️</div>
+        <h3>Extracto de ají</h3>
+        <p class="cientifico">Capsicum spp.</p>
+        <p>El ají aporta <strong>capsaicina</strong>, el compuesto que le da su picor natural.</p>
+        <ul>
+          <li>Produce un calor suave que relaja la zona.</li>
+          <li>Con el uso regular, disminuye la sensibilidad de los nervios que transmiten el dolor.</li>
+        </ul>
+      </article>
+    </div>
+
+    <h3 style="margin-top:28px">Complementado con</h3>
+    <div class="complementos">
+      <div class="complemento">
+        <div class="icono" aria-hidden="true">❄️</div>
+        <p><strong>Mentol.</strong> Da una sensación fresca inmediata que distrae la percepción del dolor.</p>
+      </div>
+      <div class="complemento">
+        <div class="icono" aria-hidden="true">🔥</div>
+        <p><strong>Salicilato de metilo.</strong> Genera calor local y potencia el efecto calmante.</p>
+      </div>
+    </div>
+
+    <div class="respaldo">
+      <strong>¿Sabías que…?</strong> En un estudio clínico con 204 personas con artrosis en las manos, un gel de árnica alivió el dolor y la rigidez de forma comparable a un gel de ibuprofeno tras 3 semanas de uso (Widrig y col., <em>Rheumatology International</em>, 2007).
+    </div>
+  </div>
+</section>
+
+<!-- USO CORRECTO -->
+<section id="uso">
+  <div class="contenedor">
+    <span class="etiqueta">Lo más importante</span>
+    <h2>Cómo usar FUERADOL correctamente</h2>
+    <p>Usarlo bien es lo que hace la diferencia. Sigue estos pasos cada vez.</p>
+
+    <div class="resumen-uso">
+      <div class="dato-uso"><div class="valor" data-config="cantidad">Capa fina</div><div class="texto">cantidad del tamaño de una arveja</div></div>
+      <div class="dato-uso"><div class="valor" data-config="frecuencia">2 a 3 veces</div><div class="texto">al día como máximo</div></div>
+      <div class="dato-uso"><div class="valor" data-config="dias">7 días</div><div class="texto">máximo sin consultar al médico</div></div>
+    </div>
+
+    <ol class="pasos">
+      <li class="paso">
+        <div class="numero">1</div>
+        <div>
+          <h3>Limpia y seca la zona</h3>
+          <p>La piel debe estar limpia, seca y sana: sin heridas, raspones ni irritación. Lávate las manos antes de aplicarlo.</p>
+        </div>
+      </li>
+      <li class="paso">
+        <div class="numero">2</div>
+        <div>
+          <h3>Toma poca cantidad</h3>
+          <p>Con la yema de los dedos, toma una porción del tamaño de una arveja. Más cantidad no alivia más y puede irritar la piel.</p>
+        </div>
+      </li>
+      <li class="paso">
+        <div class="numero">3</div>
+        <div>
+          <h3>Aplica y masajea suavemente</h3>
+          <p>Extiende una capa fina sobre la zona adolorida y masajea con movimientos circulares hasta que se absorba.</p>
+          <div class="donde">
+            <div>Rodillas</div>
+            <div>Manos y dedos</div>
+            <div>Cuello y hombros</div>
+            <div>Espalda y cintura</div>
+          </div>
+        </div>
+      </li>
+      <li class="paso importante">
+        <div class="numero">4</div>
+        <div>
+          <h3>Lávate las manos de inmediato</h3>
+          <p>Si luego te tocas los ojos, la nariz o la boca, va a arder. Lava tus manos con agua y jabón justo después de aplicarlo. <strong>Si el dolor es en tus manos</strong>, deja que el gel se absorba, lava solo las yemas de los dedos y evita tocarte la cara.</p>
+        </div>
+      </li>
+      <li class="paso">
+        <div class="numero">5</div>
+        <div>
+          <h3>Deja la zona al aire</h3>
+          <p>No cubras con vendas apretadas, plásticos ni fajas. Espera a que se absorba antes de vestirte.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="sensacion">
+      <h3>¿Es normal sentir calor o frescor?</h3>
+      <p><strong>Sí.</strong> Es normal sentir primero frescor (por el mentol) y luego un calor suave (por el ají). Es la señal de que el gel está actuando. Esa sensación suele bajar con los días de uso.</p>
+      <p><strong>Pero no debe quemar.</strong> Si sientes ardor fuerte o la piel se pone roja, usa una cantidad menor en la próxima aplicación. Si aun así el ardor persiste, deja de usarlo.</p>
+    </div>
+
+    <div class="si-no">
+      <div class="lista-si">
+        <h3>Sí hacer</h3>
+        <ul>
+          <li>Usarlo solo sobre la piel, en la zona con dolor.</li>
+          <li>Probarlo primero en una zona pequeña si tienes piel sensible.</li>
+          <li>Usarlo de forma constante durante varios días: el efecto del ají mejora con el uso regular.</li>
+          <li>Cerrar bien el frasco después de cada uso.</li>
+          <li>Guardarlo lejos del alcance de niños y mascotas.</li>
+        </ul>
+      </div>
+      <div class="lista-no">
+        <h3>No hacer</h3>
+        <ul>
+          <li>No aplicar en heridas, piel irritada, quemaduras o con eccema.</li>
+          <li>No acercarlo a los ojos, la boca, la nariz ni a zonas íntimas.</li>
+          <li>No usar con bolsas de agua caliente, mantas eléctricas ni después de un baño muy caliente: puede quemar la piel.</li>
+          <li>No cubrir con vendajes apretados.</li>
+          <li>No aplicar más veces de las indicadas.</li>
+          <li>No tragarlo. Es solo de uso externo.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="contenedor">
+    <span class="etiqueta">Míralo en acción</span>
+    <h2>Vuelve a moverte con libertad</h2>
+    <div class="videos">
+      <div class="video">
+        <figure>
+          <video src="media/video-manos.mp4" poster="media/poster-manos.jpg" controls playsinline preload="none"></video>
+          <figcaption>Dolor en las manos</figcaption>
+        </figure>
+      </div>
+      <div class="video">
+        <figure>
+          <video src="media/video-rodilla.mp4" poster="media/poster-rodilla.jpg" controls playsinline preload="none"></video>
+          <figcaption>Dolor de rodilla</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECAUCIONES -->
+<section id="precauciones">
+  <div class="contenedor">
+    <span class="etiqueta">Lee antes de usar</span>
+    <h2>Precauciones</h2>
+
+    <div class="aviso-grande">
+      <div class="icono" aria-hidden="true">⚠️</div>
+      <p>Si el dolor sigue después de 7 días, empeora, o hay hinchazón, fiebre o enrojecimiento de la articulación, deja de usarlo y consulta a tu médico.</p>
+    </div>
+
+    <h3>Consulta a tu médico antes de usarlo si:</h3>
+    <ul class="precauciones">
+      <li>Eres <strong>alérgico a la aspirina</strong> u otros salicilatos.</li>
+      <li>Tomas <strong>anticoagulantes</strong> (por ejemplo, warfarina): el salicilato de metilo puede aumentar su efecto.</li>
+      <li>Eres alérgico a plantas de la familia de las margaritas: <strong>árnica, manzanilla, girasol o caléndula</strong>.</li>
+      <li>Estás <strong>embarazada o dando de lactar</strong>.</li>
+      <li>Tienes diabetes con problemas de circulación o sensibilidad en la piel.</li>
+    </ul>
+
+    <h3 style="margin-top:24px">No usar en</h3>
+    <ul class="precauciones">
+      <li><strong>Niños menores de 12 años</strong>, salvo indicación médica.</li>
+      <li>Personas con alergia conocida a cualquiera de sus componentes.</li>
+    </ul>
+
+    <div class="emergencia">
+      <h3>En caso de accidente</h3>
+      <ul>
+        <li><strong>Contacto con los ojos:</strong> enjuaga con abundante agua limpia durante 15 minutos. No frotes.</li>
+        <li><strong>Irritación fuerte de la piel:</strong> lava con agua fría y jabón. No uses agua caliente.</li>
+        <li><strong>Si alguien lo traga, sobre todo un niño:</strong> acude de inmediato a un centro de salud y lleva el envase.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FICHA TÉCNICA -->
+<section id="ficha">
+  <div class="contenedor">
+    <span class="etiqueta">Información del producto</span>
+    <h2>Ficha técnica</h2>
+    <table class="ficha">
+      <tbody>
+        <tr><th>Nombre comercial</th><td>FUERADOL</td></tr>
+        <tr><th>Forma farmacéutica</th><td>Gel tópico</td></tr>
+        <tr><th>Vía de administración</th><td>Tópica (uso externo sobre la piel)</td></tr>
+        <tr><th>Presentación</th><td>Frasco de 30 g</td></tr>
+        <tr>
+          <th>Composición</th>
+          <td>
+            <ul class="composicion">
+              <li class="principal"><span>Extracto de árnica (<em>Arnica montana</em>)</span><span data-config="conc_arnica"></span></li>
+              <li class="principal"><span>Extracto de ají (<em>Capsicum</em> spp.)</span><span data-config="conc_aji"></span></li>
+              <li><span>Mentol</span><span data-config="conc_mentol"></span></li>
+              <li><span>Salicilato de metilo</span><span data-config="conc_salicilato"></span></li>
+              <li><span>Excipientes</span><span>c.s.p. 100 g</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr><th>Indicaciones</th><td>Alivio temporal de dolores musculares y articulares leves a moderados: contracturas, golpes, torceduras, dolor de espalda y molestias articulares.</td></tr>
+        <tr><th>Modo de uso</th><td>Aplicar una capa fina sobre la zona afectada y masajear hasta su absorción, <span data-config="frecuencia_texto"></span>. Lavarse las manos después de cada aplicación. <a href="#uso">Ver instrucciones completas</a>.</td></tr>
+        <tr><th>Contraindicaciones</th><td>Hipersensibilidad a los componentes, a los salicilatos o a plantas de la familia Asteraceae. Piel lesionada. Menores de 12 años.</td></tr>
+        <tr><th>Almacenamiento</th><td>Conservar a temperatura menor de 30 °C, en lugar fresco y seco, protegido de la luz y con el frasco bien cerrado. Mantener fuera del alcance de los niños.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- PREGUNTAS -->
+<section id="preguntas">
+  <div class="contenedor">
+    <span class="etiqueta">Dudas comunes</span>
+    <h2>Preguntas frecuentes</h2>
+    <details>
+      <summary>¿En cuánto tiempo siento alivio?</summary>
+      <p>La sensación de frescor y calor se nota en pocos minutos. El efecto del ají y la árnica mejora con el uso regular durante varios días.</p>
+    </details>
+    <details>
+      <summary>¿Puedo usarlo junto con pastillas para el dolor?</summary>
+      <p>En general sí, pero si tomas medicamentos de forma permanente, sobre todo anticoagulantes o aspirina, consulta antes con tu médico o farmacéutico.</p>
+    </details>
+    <details>
+      <summary>¿Puedo aplicarlo antes de hacer ejercicio?</summary>
+      <p>Sí, pero no lo cubras con ropa muy ajustada ni rodilleras apretadas, y evita el sauna o el sol directo intenso sobre la zona.</p>
+    </details>
+    <details>
+      <summary>¿Mancha la ropa?</summary>
+      <p>Si esperas a que se absorba por completo antes de vestirte, no debería manchar.</p>
+    </details>
+    <details>
+      <summary>¿Lo pueden usar personas mayores?</summary>
+      <p>Sí. Si tienes la piel delgada o sensible, empieza con menos cantidad y menos aplicaciones al día.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="contenedor">
+    <h2>¿Tienes alguna duda?</h2>
+    <p>Escríbenos y te ayudamos.</p>
+    <div class="botones">
+      <a class="boton whatsapp" id="btn-whatsapp" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="contenedor">
+    <p class="marca">FUERADOL</p>
+    <p>Gel tópico con extractos de árnica y ají · 30 g</p>
+    <p>Registro sanitario: <span data-config="registro"></span></p>
+    <p>Este producto alivia síntomas; no reemplaza la consulta médica. Lea las indicaciones antes de usar.</p>
+  </div>
+</footer>
+
+<script>
+  // ===== DATOS DEL PRODUCTO: complétalos antes de publicar =====
+  // Deja "" en lo que no quieras mostrar; se ocultará automáticamente.
+  const CONFIG = {
+    conc_arnica: "",        // ej. "10 g"  (por cada 100 g)
+    conc_aji: "",           // ej. "2,5 g"
+    conc_mentol: "",        // ej. "3 g"
+    conc_salicilato: "",    // ej. "10 g"
+    cantidad: "Capa fina",
+    frecuencia: "2 a 3 veces",
+    frecuencia_texto: "hasta 2 a 3 veces al día",
+    dias: "7 días",
+    registro: "",           // ej. "N° XXXXX"
+    fabricante: "",         // nombre del laboratorio o empresa
+    whatsapp: ""            // solo números con código de país, ej. "51987654321"
+  };
+
+  document.querySelectorAll("[data-config]").forEach(el => {
+    const valor = CONFIG[el.dataset.config];
+    if (valor) {
+      el.textContent = valor;
+    } else if (el.tagName === "TD") {
+      el.textContent = "Ver envase";
+      el.classList.add("pendiente");
+    } else if (el.closest("footer")) {
+      el.closest("p").remove();
+    }
+  });
+
+  const btn = document.getElementById("btn-whatsapp");
+  if (CONFIG.whatsapp) {
+    btn.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent("Hola, tengo una consulta sobre FUERADOL");
+  } else {
+    document.getElementById("contacto").remove();
+  }
+</script>
+</body>
+</html>
